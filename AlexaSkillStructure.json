@@ -1,0 +1,535 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "train bus",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MyNameIsIntent",
+                    "slots": [
+                        {
+                            "name": "MyName",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "{MyName} is my name",
+                        "my name is {MyName} "
+                    ]
+                },
+                {
+                    "name": "QuestionOne",
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "AMAZON_Answer",
+                            "samples": [
+                                "{answer}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{answer}"
+                    ]
+                },
+                {
+                    "name": "QuestionTwo",
+                    "slots": [
+                        {
+                            "name": "answertwo",
+                            "type": "AMAZON_TWO",
+                            "samples": [
+                                "{answertwo}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{answertwo} "
+                    ]
+                },
+                {
+                    "name": "QuestionThree",
+                    "slots": [
+                        {
+                            "name": "answerthree",
+                            "type": "AMAZON_THREE",
+                            "samples": [
+                                "{answerthree}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{answerthree}"
+                    ]
+                },
+                {
+                    "name": "QuestionFive",
+                    "slots": [
+                        {
+                            "name": "answerfive",
+                            "type": "AMAZON_FIVE"
+                        }
+                    ],
+                    "samples": [
+                        "{answerfive}"
+                    ]
+                },
+                {
+                    "name": "QuestionFour",
+                    "slots": [
+                        {
+                            "name": "answerfour",
+                            "type": "AMAZON_FOUR"
+                        }
+                    ],
+                    "samples": [
+                        "{answerfour}"
+                    ]
+                },
+                {
+                    "name": "QuestionSix",
+                    "slots": [
+                        {
+                            "name": "answersix",
+                            "type": "AMAZON_SIX"
+                        }
+                    ],
+                    "samples": [
+                        "{answersix}"
+                    ]
+                },
+                {
+                    "name": "QuestionSeven",
+                    "slots": [
+                        {
+                            "name": "answerseven",
+                            "type": "AMAZON_SEVEN"
+                        }
+                    ],
+                    "samples": [
+                        "{answerseven}"
+                    ]
+                },
+                {
+                    "name": "QuestionEight",
+                    "slots": [
+                        {
+                            "name": "answereight",
+                            "type": "AMAZON_EIGHT"
+                        }
+                    ],
+                    "samples": [
+                        "{answereight}"
+                    ]
+                },
+                {
+                    "name": "QuestionNine",
+                    "slots": [
+                        {
+                            "name": "answernine",
+                            "type": "AMAZON_NINE"
+                        }
+                    ],
+                    "samples": [
+                        "{answernine}"
+                    ]
+                },
+                {
+                    "name": "SessionTwo",
+                    "slots": [
+                        {
+                            "name": "stwo",
+                            "type": "AMAZON_STWO"
+                        }
+                    ],
+                    "samples": [
+                        "{stwo}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "AMAZON_Answer",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "i don't sleep at all"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "it is difficult for me to sleep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "it is easy for me to sleep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "i slept good"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AMAZON_TWO",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "far less"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "same",
+                                "synonyms": [
+                                    "i have same energy as before"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "more",
+                                "synonyms": [
+                                    "i have more energy than before"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "less",
+                                "synonyms": [
+                                    "i have less energy than before"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AMAZON_THREE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "i have interest ",
+                                "synonyms": [
+                                    "i have interest in doing things"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "no interest ",
+                                "synonyms": [
+                                    "i have no interest at all"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "little interest ",
+                                "synonyms": [
+                                    "i have little interest in doing things"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AMAZON_FOUR",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "i have poor appetite",
+                                "synonyms": [
+                                    "i don't eat well"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "i have good appetite",
+                                "synonyms": [
+                                    "i eat very often",
+                                    "i have good appetite"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AMAZON_FIVE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "silent",
+                                "synonyms": [
+                                    "i am a bit silent",
+                                    "i am very silent"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "talkative",
+                                "synonyms": [
+                                    "i am a bit talkative",
+                                    "i am very talkative"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AMAZON_SIX",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "at college"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "at school"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "at home"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "at work"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AMAZON_SEVEN",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "outdoors",
+                                "synonyms": [
+                                    "outdoor"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "indoors",
+                                "synonyms": [
+                                    "indoor"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AMAZON_EIGHT",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "betrayal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "relationship",
+                                "synonyms": [
+                                    "relationships"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "break up"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "work pressure"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AMAZON_NINE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "everyday"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "not at all"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "always"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "never"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AMAZON_STWO",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "start session two"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sure"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "go ahead"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "QuestionOne",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "AMAZON_Answer",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.549924345496.683165041445"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "QuestionTwo",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "answertwo",
+                            "type": "AMAZON_TWO",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.505169764602.857802710135"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "QuestionThree",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "answerthree",
+                            "type": "AMAZON_THREE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.919571749569.510231754396"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "MyNameIsIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "MyName",
+                            "type": "AMAZON.FirstName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.549924345496.683165041445",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "how would you describe your sleep, you can say i slept good, It is difficult for me to sleep or I did not sleep at all"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.505169764602.857802710135",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "how is your energy compared to before"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.919571749569.510231754396",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "do you find pleasure in doing things, little interest or no interest at all"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1446489465878.1464601735803",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "i want to know about your appetite, do you overeat or do you have poor appetite"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1395963440517.1285843622617",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "what is your number"
+                    }
+                ]
+            }
+        ]
+    }
+}
